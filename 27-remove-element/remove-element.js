@@ -4,7 +4,6 @@
  * @return {number}
  */
 var removeElement = function(nums, val) {
-    let dupArr = [];
     let iterate = 0;
 
     for(let i = 0;i < nums.length; i++){
