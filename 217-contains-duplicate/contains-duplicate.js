@@ -1,16 +1,12 @@
-function containsDuplicate(nums) {
-    const seen = new Set();
-
-    for(let i = 0;i < nums.length ; i ++){
-        if(seen.has(nums[i])){
-            return true;
-        }
-
-        seen.add(nums[i]);
+var containsDuplicate = function (nums) {
+    let seen = new Set();
+    for (const n of nums) {
+        if(seen.has(n)) return true;
+        seen.add(n);
     }
 
-    return false;
+    return false
 
-}
+};
 
-console.log(containsDuplicate([1,2,3,1]));
+console.log(containsDuplicate([1, 2, 3, 4]));
