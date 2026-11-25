@@ -20,7 +20,7 @@ const reverseWords = function(s) {
         }
     }
 
-    return finalS.trim("");
+    return finalS.trim();
 }
 
 console.log(reverseWords("the sky is blue")) 
